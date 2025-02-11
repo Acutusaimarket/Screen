@@ -1,0 +1,155 @@
+/* Container styles */
+.survey-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styles */
+.survey-form {
+  background-color: #e6ffe6;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Title styles */
+.survey-title {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Question styles */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.question-label {
+  display: block;
+  font-family: Arial, sans-serif;
+  margin-bottom: 12px;
+}
+
+.question-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.required-marker {
+  color: #dc3545;
+  margin-left: 4px;
+}
+
+/* Input and select styles */
+.input-field,
+.select-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field:focus,
+.select-field:focus {
+  outline: none;
+  border-color: #00bf63;
+  box-shadow: 0 0 0 2px rgba(0, 191, 99, 0.2);
+}
+
+/* Submit button styles */
+.submit-container {
+  margin-top: 30px;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background-color: #00bf63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #00a854;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error states */
+.error-message,
+.submission-error {
+  padding: 12px;
+  margin: 12px 0;
+  background-color: #fff3f3;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  color: #dc3545;
+}
+
+/* Loading states */
+.button-loading {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .survey-container {
+    padding: 10px;
+  }
+
+  .survey-form {
+    padding: 20px;
+  }
+
+  .question-container {
+    padding: 15px;
+  }
+
+  .input-field,
+  .select-field {
+    width: 100%;
+  }
+}
